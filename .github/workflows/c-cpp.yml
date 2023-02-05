@@ -14,8 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: folder
-      run: cd hello_world/src/
-
     - name: make
+      working-directory: hello_world/src
       run: make
